@@ -62,3 +62,47 @@ footer {
   background: #333;
   color: #fff;
 }
+/* PROJECT SECTION STYLING */
+#projects {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.project {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project p {
+  color: #555;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.project a:hover {
+  background-color: #005fa3;
+}
+

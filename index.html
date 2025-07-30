@@ -5,6 +5,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zoir Shokh's | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero-content h1 span {
+      color: #00fff7;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      background: #00fff7;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00c9d9;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    #about {
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem auto;
+      display: block;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .project a:hover {
+      background-color: #005fa3;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 0.7rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,36 +185,40 @@
     </nav>
   </header>
 
- 
-   <section id="about">
-  <h2>About Me</h2>
-  <img src="https://raw.githubusercontent.com/Zoirsh777/Portfolio/main/IMG_1206.jpg" alt="Zoir Shokh" class="profile-pic" />
-  <p>Hello! I'm 24 years old Front-End developer and Junior Data Analyst. I am a founder of ZRX_lab and we are the team to deliver the quality of work in time.</p>
-</section>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Zoir Shokh</span></h1>
+      <p>Creative Front-End Developer & Junior Data Analyst</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
 
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <img src="https://raw.githubusercontent.com/Zoirsh777/Portfolio/main/IMG_1206.jpg" alt="Zoir Shokh" class="profile-pic" />
+    <p>Hello! I'm 24 years old Front-End developer and Junior Data Analyst. I am the founder of ZRX_lab and we are a team delivering quality work on time.</p>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
 
-  <div class="project">
-    <h3>Data Analyst Project #1</h3>
-    <p>This project involves data analysis using Python in Google Colab. It includes data cleaning, exploration, and visualization.</p>
-    <a href="https://colab.research.google.com/drive/1vSDqkg1lpyHUNy6_8o-JRx0fuK54o5lb" target="_blank">View on Google Colab</a>
-  </div>
+    <div class="project">
+      <h3>Data Analyst Project #1</h3>
+      <p>This project involves data analysis using Python in Google Colab. It includes data cleaning, exploration, and visualization.</p>
+      <a href="https://colab.research.google.com/drive/1vSDqkg1lpyHUNy6_8o-JRx0fuK54o5lb" target="_blank">View on Google Colab</a>
+    </div>
 
-  <div class="project">
-    <h3>Project Two #2</h3>
-    <p>This Git-webpage is the product of my idea combined with #HTML5 & #CSS</p>
-  </div>
-</section>
-  
-<a href="https://colab.research.google.com/drive/1vSDqkg1lpyHUNy6_8o-JRx0fuK54o5lb" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Open in Google Colab" width="100">
-</a>
+    <div class="project">
+      <h3>Project Two #2</h3>
+      <p>This Git-webpage is the product of my idea combined with HTML5 & CSS.</p>
+    </div>
+  </section>
 
-
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
+    <p><strong>Address:</strong> 6th Tinchlik Street, Urgench City, Khorezm Region, Uzbekistan</p>
+    <p><strong>Email:</strong> <a href="mailto:zoirshokh494@gmail.com">zoirshokh494@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+998907132025">+998 90 713 2025</a></p>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
@@ -57,5 +230,8 @@
   <footer>
     <p>&copy; 2025 Zoir Shokh. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

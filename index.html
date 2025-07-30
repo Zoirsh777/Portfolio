@@ -154,6 +154,14 @@
       color: #fff;
     }
 
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -217,12 +225,13 @@
   <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <p><strong>Address:</strong> 6th Tinchlik Street, Urgench City, Khorezm Region, Uzbekistan</p>
+    <iframe src="https://www.google.com/maps?q=6th+Tinchlik+Street,+Urgench,+Uzbekistan&output=embed"></iframe>
     <p><strong>Email:</strong> <a href="mailto:zoirshokh494@gmail.com">zoirshokh494@gmail.com</a></p>
     <p><strong>Phone:</strong> <a href="tel:+998907132025">+998 90 713 2025</a></p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>

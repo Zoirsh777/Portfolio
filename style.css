@@ -110,4 +110,46 @@ footer {
     padding: 1rem;
   }
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+.project {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  header nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .project {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.2rem;
+  }
+
+  .project a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
 

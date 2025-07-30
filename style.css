@@ -105,4 +105,9 @@ footer {
 .project a:hover {
   background-color: #005fa3;
 }
+@media (max-width: 600px) {
+  .project {
+    padding: 1rem;
+  }
+}
 
